@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style Shorthand Example</title>
+    <style>
+        ul.custom-list {
+            list-style: square inside; /* Custom list style using shorthand */
+        }
+
+        ul.with-image {
+            list-style: url('custom-marker.png') outside; /* Custom image marker */
+        }
+
+        ul.default-list {
+            list-style: none; /* Removes bullets */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Custom Square Bullets (Inside)</h2>
+    <ul class="custom-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Custom Image Bullets (Outside)</h2>
+    <ul class="with-image">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>List with No Bullets</h2>
+    <ul class="default-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+</body>
+</html>

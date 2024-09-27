@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      position: absolute; /* You need to position elements to use z-index */
+      width: 150px;
+      height: 150px;
+    }
+
+    .red {
+      background-color: red;
+      z-index: 1; /* This is the lowest paper */
+      left: 50px;
+      top: 50px;
+    }
+
+    .green {
+      background-color: green;
+      z-index: 3; /* This paper will be on top */
+      left: 100px;
+      top: 100px;
+    }
+
+    .blue {
+      background-color: blue;
+      z-index: 2; /* This is in the middle */
+      left: 150px;
+      top: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box red">Red Box (z-index: 1)</div>
+  <div class="box green">Green Box (z-index: 3)</div>
+  <div class="box blue">Blue Box (z-index: 2)</div>
+
+</body>
+</html>
